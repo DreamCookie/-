@@ -196,3 +196,8 @@ for record in test_data_list:
         scorecard.append(0)
     pass
 
+
+# 12.01.2022  ADDED
+# расчет доли правильных ответов (в районе 0.925)
+scorecard_array = numpy.asarray(scorecard)
+print ("performance = ", scorecard_array.sum() / scorecard_array.size)
